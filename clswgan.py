@@ -132,7 +132,7 @@ g1 = tf.Graph()
 g2 = tf.Graph()
 
 ################### graoh1 definition ##########################################################
-"""
+
 with g1.as_default():
     ########## placeholderS ############################ 
     input_res = tf.placeholder(tf.float32,[opt.batch_size, opt.resSize],name='input_features')
@@ -263,7 +263,7 @@ with tf.Session(graph = g1) as sess:
         
         saver.save(sess, os.path.join(opt.modeldir, 'models_'+str(epoch)+'.ckpt')) 
         print ("Model saved")  
-"""        
+        
 ##################### graph 2 definition ########################################################
 with g2.as_default():
     
