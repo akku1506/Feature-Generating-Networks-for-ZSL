@@ -6,8 +6,8 @@ This repository is an implementation of Feature Generating Networks for Zero Sho
 2. Download datasets for zero shot learning from http://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip
 
 ## Running the code
-'''
+```
   sh zsl_awa.sh
-'''
+```
 Make sure you provide the correct dataset path in the shell script.
 You can change the arguments passed in the shell script to generate results for any dataset.
