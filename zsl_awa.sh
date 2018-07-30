@@ -1,0 +1,6 @@
+python classifier.py --manualSeed 9182 --preprocessing --lr 0.001 --image_embedding res101 --class_embedding att --nepoch 50 --dataset AWA1 --batch_size 100 --attSize 85 --resSize 2048 --modeldir models_classifier --logdir logs_classifier --dataroot '/home/test/notebooks/transductive+learning/xlsa17/data'
+
+python clswgan.py --manualSeed 9182 --cls_weight 0.01 --preprocessing --val_every 1 --lr 0.00001 --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 30 --syn_num 300 --ngh 4096 --ndh 4096 --lambda1 10 --critic_iter 5 --dataset AWA1 --batch_size 64 --nz 85 --attSize 85 --resSize 2048 --modeldir models_awa --logdir logs_awa --dataroot '/home/test/notebooks/transductive+learning/xlsa17/data' --classifier_modeldir './models_classifier'  --classifier_checkpoint 49 
+
+python clswgan.py --manualSeed 9182 --cls_weight 0.01 --preprocessing --val_every 1 --lr 0.00001 --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 30 --syn_num 300 --ngh 4096 --ndh 4096 --lambda1 10 --critic_iter 5 --dataset AWA1 --batch_size 64 --nz 85 --attSize 85 --resSize 2048 --modeldir models_awa --logdir logs_awa --dataroot '/home/test/notebooks/transductive+learning/xlsa17/data' --classifier_modeldir './models_classifier'  --classifier_checkpoint 49 --gzsl
+
