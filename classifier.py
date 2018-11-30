@@ -228,5 +228,5 @@ if opt.test:
     print("Test Accuracy is:"+str(acc))
     acc=train_cls.val(data.train_feature,data.train_label, data.seenclasses)
     print("Train Accuracy is:"+str(acc))
-    acc=train_cls.val(data.test_unseen_feature,data.test_unseen_label, data.unseenclasses)
-    print("Test Different Labels Accuracy is:"+str(acc))
+    #acc=train_cls.val(data.test_unseen_feature,data.test_unseen_label, data.unseenclasses)
+    #print("Test Different Labels Accuracy is:"+str(acc))
