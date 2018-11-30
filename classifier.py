@@ -165,7 +165,7 @@ class CLASSIFIER:
         acc_per_class = np.zeros(nclass)
         for i in range(0,nclass):
             idx = (test_label == i)
-            acc_per_class[i] = np.sum(test_label[idx]==predicted_label[idx]) / np.sum(idx)
+            acc_per_class[i] = float(np.sum(test_label[idx]==predicted_label[idx])) / float(np.sum(idx))
         return np.mean(acc_per_class) 
 
 
