@@ -11,3 +11,5 @@ This repository is an implementation of Feature Generating Networks for Zero Sho
 ```
 Make sure you provide the correct dataset path in the shell script.
 You can change the arguments passed in the shell script to generate results for any dataset.
+
+I have also provided with the weights of the generator discriminator model on AWA2 at https://drive.google.com/file/d/1gSsokbQNrn0bpJtKQYRIqPK3-0tf0mRl/view?usp=sharing.
